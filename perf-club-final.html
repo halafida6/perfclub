@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rejoins le PERF CLUB by PerfTechX : événements sportifs exclusifs, t-shirts collectors, buffet healthy et communauté d'athlètes d'élite à Paris. Adhésion 15€/an.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="PERF CLUB - Rejoins l'élite athlétique | PerfTechX">
+    <meta property="og:description" content="Le PERF CLUB rassemble les athlètes les plus déterminés de Paris. Événements exclusifs, t-shirts collectors, communauté d'élite.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://res.cloudinary.com/dke6iy9pe/image/upload/q_auto/f_auto/v1776132048/__3_rzhg8x.jpg">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <title>PERF CLUB - Rejoins l'élite athlétique | PerfTechX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dke6iy9pe/image/upload/q_auto/f_auto/v1776132048/__3_rzhg8x.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Antonio:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+/* style.css */
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --orange: #FF4500;
+    --orange-hover: #FF6B35;
+    --gray-bg: #F8F8F8;
+    --gray-light: #E5E5E5;
+    --text-secondary: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-family: 'Antonio', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    color: var(--black);
+}
+
+nav {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    width: 100%;
+}
+
+nav a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--orange);
+}
+
+/* Bouton "REJOINDRE" */
+.cta-header {
+    background: var(--orange);
+    color: var(--white);
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cta-header:hover {
+    background: var(--orange-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 30px rgba(255, 69, 0, 0.3);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: var(--black);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hero */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 5%;
+    background-image: url('https://res.cloudinary.com/dke6iy9pe/image/upload/q_auto/f_auto/v1776132048/__3_rzhg8x.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero > * {
+position: relative;
+z-index: 2;
+}
+.hero-badge {
+background: var(--orange);
+color: var(--white);
+padding: 0.5rem 1.5rem;
+border-radius: 50px;
+font-size: 0.85rem;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 1.5rem;
+}
+.hero-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(3rem, 8vw, 6rem);
+font-weight: 400;
+line-height: 1.1;
+margin-bottom: 1rem;
+color: var(--white);
+}
+.hero-title .highlight {
+color: var(--orange);
+}
+.hero-subtitle {
+font-size: 1.1rem;
+color: rgba(255, 255, 255, 0.8);
+max-width: 600px;
+margin-bottom: 2rem;
+}
+.hero-cta-group {
+display: flex;
+gap: 1.5rem;
+}
+.btn-primary {
+background: var(--orange);
+color: var(--white);
+padding: 1rem 2.5rem;
+border-radius: 50px;
+font-weight: 700;
+font-size: 0.95rem;
+text-decoration: none;
+transition: all 0.3s ease;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+}
+.btn-primary:hover {
+background: var(--orange-hover);
+transform: translateY(-2px);
+box-shadow: 0 10px 30px rgba(255, 69, 0, 0.3);
+}
+.btn-secondary {
+background: rgba(255, 255, 255, 0.1);
+color: var(--white);
+padding: 1rem 2.5rem;
+border-radius: 50px;
+font-weight: 600;
+font-size: 0.95rem;
+text-decoration: none;
+transition: all 0.3s ease;
+border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.btn-secondary:hover {
+background: rgba(255, 255, 255, 0.2);
+border-color: rgba(255, 255, 255, 0.6);
+transform: translateY(-2px);
+}
+/* Ticker Banner */
+.ticker-wrapper {
+background: var(--black);
+color: var(--white);
+padding: 1.5rem 5%;
+overflow: hidden;
+}
+.ticker {
+display: flex;
+gap: 3rem;
+white-space: nowrap;
+animation: ticker 20s linear infinite;
+}
+.ticker-item {
+font-family: 'Antonio', sans-serif;
+font-size: 1.1rem;
+font-weight: 900;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+@keyframes ticker {
+0% { transform: translateX(0); }
+100% { transform: translateX(-100%); }
+}
+/* Bento Grid */
+.benefits-section {
+padding: 6rem 5%;
+background: var(--gray-bg);
+}
+.section-header {
+max-width: 800px;
+margin: 0 auto 4rem;
+text-align: center;
+}
+.section-label {
+font-size: 0.85rem;
+color: var(--orange);
+text-transform: uppercase;
+letter-spacing: 0.2em;
+font-weight: 700;
+margin-bottom: 1rem;
+}
+.section-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(2.5rem, 6vw, 4rem);
+font-weight: 400;
+line-height: 1.1;
+}
+.bento-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 2rem;
+max-width: 1400px;
+margin: 0 auto;
+}
+.bento-card {
+border-radius: 20px;
+padding: 3rem;
+position: relative;
+overflow: hidden;
+transition: all 0.4s ease;
+border: 2px solid rgba(255, 255, 255, 0.1);
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+background-size: cover;
+background-position: center;
+}
+.bento-card::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6);
+z-index: 1;
+transition: all 0.4s ease;
+}
+.bento-card:hover::before {
+background: rgba(0, 0, 0, 0.8);
+}
+.bento-card:hover {
+transform: translateY(-8px);
+border-color: var(--orange);
+box-shadow: 0 20px 40px rgba(255, 69, 0, 0.2);
+}
+.card-content {
+position: relative;
+z-index: 2;
+}
+.bento-card h3 {
+font-family: 'Antonio', sans-serif;
+font-size: 1.6rem;
+font-weight: 900;
+text-transform: uppercase;
+color: var(--white);
+margin-bottom: 0.8rem;
+line-height: 1.2;
+}
+.bento-card p {
+color: rgba(255, 255, 255, 0.9);
+line-height: 1.6;
+}
+.large {
+grid-row: span 2;
+min-height: 500px;
+}
+.card-1 { background-image: url('https://res.cloudinary.com/dke6iy9pe/image/upload/q_auto/f_auto/v1776161174/Caitlin_Sullivan_Photography_m0bekw.jpg'); }
+.card-2 { background-image: url('https://res.cloudinary.com/dke6iy9pe/image/upload/q_auto/f_auto/v1776161618/Perf_Club_Site_Gemini_3.1_Flash_Nano_Banana_2__2026-04-14_10-07-19_1_jpn5cd.png'); }
+.card-3 { background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800'); }
+.card-4 { background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200'); }
+.card-5 { background-image: url('https://res.cloudinary.com/dke6iy9pe/image/upload/q_auto/f_auto/v1776161302/OACE_oace_sports_Instagram_photos_and_videos_n6ilvg.jpg'); }
+/* Advantages Section */
+.advantages-section {
+    padding: 6rem 5% 4rem;
+}
+.event-card {
+background: var(--white);
+border-radius: 20px;
+padding: 4rem;
+max-width: 1000px;
+margin: 0 auto;
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+.event-date {
+font-family: 'Antonio', sans-serif;
+font-size: 3rem;
+font-weight: 900;
+color: var(--orange);
+line-height: 1;
+margin-bottom: 1.5rem;
+}
+.event-description {
+font-size: 1.1rem;
+color: var(--text-secondary);
+margin-bottom: 3rem;
+line-height: 1.6;
+}
+.event-info-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 2rem;
+margin-bottom: 3rem;
+}
+.event-info-item {
+background: var(--gray-bg);
+padding: 1.5rem;
+border-radius: 10px;
+}
+.event-info-label {
+font-size: 0.85rem;
+color: var(--text-secondary);
+text-transform: uppercase;
+letter-spacing: 0.1em;
+margin-bottom: 0.5rem;
+}
+.event-info-value {
+font-family: 'Antonio', sans-serif;
+font-size: 1.4rem;
+font-weight: 900;
+}
+.event-program {
+background: rgba(255, 69, 0, 0.05);
+padding: 2rem;
+border-radius: 10px;
+border-left: 4px solid var(--orange);
+}
+.event-program strong {
+color: var(--orange);
+display: block;
+margin-bottom: 1rem;
+font-size: 1.1rem;
+}
+/* Advantages Section */
+.advantages-section {
+padding: 6rem 5%;
+}
+.advantages-grid {
+display: grid;
+grid-template-columns: 1.5fr 1fr;
+gap: 3rem;
+max-width: 1400px;
+margin: 0 auto;
+}
+.large-card {
+background-image: url('https://res.cloudinary.com/dke6iy9pe/image/upload/q_auto/f_auto/v1776182494/Wallpaper_DemonSeason_lxxq0h.jpg');
+background-size: cover;
+background-position: center;
+border-radius: 20px;
+padding: 3rem;
+position: relative;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.card-top {
+    display: flex;
+    justify-content: space-between; /* Ajout de cette propriété */
+    align-items: center; /* Ajout de cette propriété */
+    margin-bottom: 2rem; /* Ajout d'une marge en bas pour l'espacement */
+    }
+.large-card::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);
+z-index: 1;
+}
+.card-overlay {
+position: relative;
+z-index: 2;
+}
+.adhesion-label {
+font-size: 0.85rem;
+color: rgba(255, 255, 255, 0.7);
+text-transform: uppercase;
+letter-spacing: 0.2em;
+font-weight: 700;
+margin-bottom: 0.5rem;
+}
+.price-big {
+font-family: 'Antonio', sans-serif;
+font-size: 6rem;
+font-weight: 900;
+color: var(--white);
+line-height: 1;
+}
+.card-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: auto; /* Ajout de cette propriété pour pousser le bouton vers le bas */
+}
+
+
+.btn-cta {
+    background: var(--orange);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-family: 'Antonio', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(255, 69, 0, 0.3);
+    margin-right: 2rem; /* Ajout d'une marge à droite pour éloigner le bouton du prix */
+
+}
+.btn-cta:hover {
+    background: var(--orange-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(255, 69, 0, 0.5);
+}
+.small-cards {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+.small-card {
+background: var(--gray-bg);
+border-radius: 16px;
+padding: 2.5rem;
+transition: all 0.3s ease;
+}
+.small-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+background: var(--white);
+}
+.card-icon-wrapper {
+width: 56px;
+height: 56px;
+background: rgba(255, 69, 0, 0.1);
+border-radius: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 1.2rem;
+}
+.small-card h3 {
+font-family: 'Antonio', sans-serif;
+font-size: 1.3rem;
+font-weight: 900;
+color: var(--black);
+margin-bottom: 0.8rem;
+line-height: 1.2;
+text-transform: uppercase;
+}
+.small-card p {
+font-size: 0.95rem;
+line-height: 1.6;
+color: var(--text-secondary);
+}
+/* CTA Section */
+.cta-section {
+    padding: 6rem 5% 4rem;
+    background: var(--gray-bg);
+    text-align: center;
+}
+.cta-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(3rem, 8vw, 5rem);
+font-weight: 400;
+line-height: 1.1;
+margin-bottom: 2rem;
+}
+.cta-title .highlight {
+color: var(--orange);
+}
+.cta-description {
+font-size: 1.1rem;
+color: var(--text-secondary);
+max-width: 700px;
+margin: 0 auto 3rem;
+line-height: 1.7;
+}
+.cta-section .btn-primary {
+padding: 1.2rem 3rem;
+font-size: 1rem;
+}
+/* Footer */
+footer {
+padding: 6rem 5%;
+background: var(--black);
+color: var(--white);
+}
+.footer-content {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+gap: 4rem;
+margin-bottom: 3rem;
+}
+.footer-brand {
+max-width: 350px;
+}
+.footer-logo {
+font-family: 'Antonio', sans-serif;
+font-size: 1.8rem;
+font-weight: 900;
+margin-bottom: 1rem;
+}
+.footer-tagline {
+color: rgba(255, 255, 255, 0.7);
+line-height: 1.6;
+margin-bottom: 1.5rem;
+}
+.footer-section h4 {
+font-family: 'Antonio', sans-serif;
+font-size: 1.1rem;
+font-weight: 900;
+text-transform: uppercase;
+margin-bottom: 1rem;
+}
+.footer-section a {
+display: block;
+color: rgba(255, 255, 255, 0.7);
+text-decoration: none;
+margin-bottom: 0.8rem;
+transition: color 0.3s ease;
+}
+.footer-section a:hover {
+color: var(--orange);
+}
+.footer-bottom {
+text-align: center;
+padding-top: 2rem;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+color: rgba(255, 255, 255, 0.5);
+font-size: 0.9rem;
+}
+        /* Responsive */
+
+/* Mobile menu */
+.burger {
+    display: none;
+    cursor: pointer;
+    z-index: 101;
+    margin-left: auto;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: var(--black);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.burger.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.burger.active div:nth-child(2) {
+    opacity: 0;
+}
+.burger.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.mobile-menu.active {
+    display: flex;
+}
+.mobile-menu a {
+    font-family: 'Antonio', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.mobile-menu a:hover {
+    color: var(--orange);
+}
+
+@media screen and (max-width: 1024px) {
+    .advantages-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .event-card {
+        padding: 3rem;
+    }
+    .large-card {
+        padding: 2.5rem;
+    }
+    .price-big {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem 5%;
+    }
+    .nav-links, .cta-header {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .hero {
+        min-height: 70vh;
+        padding: 6rem 5% 4rem;
+    }
+    .hero-title {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+    .hero-cta-group {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+    .large {
+        min-height: 350px;
+    }
+    .bento-card {
+        padding: 2rem;
+    }
+    .benefits-section {
+        padding: 4rem 5%;
+    }
+    .section-title {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .large-card {
+        padding: 2rem;
+    }
+    .price-big {
+        font-size: 3.5rem;
+    }
+    .adhesion-label {
+        font-size: 0.75rem;
+    }
+    .card-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .btn-cta {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .small-card {
+        padding: 2rem;
+    }
+    .event-card {
+        padding: 2rem;
+    }
+    .event-date {
+        font-size: 2rem;
+    }
+    .event-info-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .event-program {
+        padding: 1.5rem;
+    }
+    .cta-section {
+        padding: 4rem 5%;
+    }
+    .cta-title {
+        font-size: clamp(2.5rem, 8vw, 3.5rem);
+    }
+    .cta-section .btn-primary {
+        width: 100%;
+        text-align: center;
+        padding: 1.2rem 2rem !important;
+        font-size: 1rem !important;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .ticker-item {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        min-height: 60vh;
+        padding: 5rem 5% 3rem;
+    }
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    .large {
+        min-height: 280px;
+    }
+    .bento-card h3 {
+        font-size: 1.3rem;
+    }
+    .bento-card p {
+        font-size: 0.9rem;
+    }
+    .event-info-grid {
+        grid-template-columns: 1fr;
+    }
+    .event-info-item {
+        padding: 1rem;
+    }
+    .price-big {
+        font-size: 3rem;
+    }
+    .small-card h3 {
+        font-size: 1.1rem;
+    }
+    .cta-description {
+        font-size: 0.95rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PERFTECHX</div>
+            <div class="nav-links">
+                <a href="#benefices">Bénéfices</a>
+                <a href="#avantages">Avantages</a>
+                <a href="#inscription">M'inscrire</a>
+            </div>
+            <a href="#inscription" class="cta-header">Rejoindre</a>
+            <button class="burger" onclick="toggleMenu()" aria-label="Ouvrir le menu" aria-expanded="false">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </nav>
+    </header>
+    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true" role="navigation">
+        <a href="#benefices" onclick="toggleMenu()">Bénéfices</a>
+        <a href="#avantages" onclick="toggleMenu()">Avantages</a>
+        <a href="#inscription" onclick="toggleMenu()">M'inscrire</a>
+        <a href="#inscription" class="btn-primary" onclick="toggleMenu()">Rejoindre</a>
+    </nav>
+
+    <main>
+    <section class="hero">
+        <div class="hero-badge">+13 athlètes déjà inscrits</div>
+        <h1 class="hero-title">
+            Chaque foulée est une <span class="highlight">victoire</span>
+        </h1>
+        <p class="hero-subtitle">
+            Le PERF CLUB n'est pas un run club ordinaire. C'est une communauté d'athlètes qui repoussent leurs limites.
+        </p>
+        <div class="hero-cta-group">
+            <a href="#inscription" class="btn-primary">Devenir membre</a>
+            <a href="#benefices" class="btn-secondary">Découvrir</a>
+        </div>
+    </section>
+
+    <div class="ticker-wrapper">
+        <div class="ticker">
+            <div class="ticker-item">Performance</div>
+            <div class="ticker-item">Discipline</div>
+            <div class="ticker-item">Mentalité d'athlète</div>
+            <div class="ticker-item">Événements exclusifs</div>
+            <div class="ticker-item">T-shirts collectors</div>
+            <div class="ticker-item">Avant-premières</div>
+            <div class="ticker-item">Performance</div>
+            <div class="ticker-item">Discipline</div>
+            <div class="ticker-item">Mentalité d'athlète</div>
+            <div class="ticker-item">Événements exclusifs</div>
+            <div class="ticker-item">T-shirts collectors</div>
+            <div class="ticker-item">Avant-premières</div>
+        </div>
+    </div>
+
+
+<!-- Section Bénéfices - BENTO BOX avec IMAGES -->
+<section class="benefits-section" id="benefices">
+    <div class="section-header">
+        <div class="section-label">Ce qui t'attend</div>
+        <h2 class="section-title">Les avantages du PERF CLUB</h2>
+    </div>
+
+    <div class="bento-grid">
+        <!-- Grande card 1 - Événements -->
+        <div class="bento-card large card-1">
+            <div class="card-content">
+                <span class="card-icon"></span>
+                <h3>Événements exclusifs</h3>
+                <p>Sessions mensuelles réservées aux membres. Intensité maximale, progression garantie.</p>
+            </div>
+        </div>
+
+        <!-- Petite card 2 - T-shirts -->
+        <div class="bento-card small card-2">
+            <div class="card-content">
+                <span class="card-icon"></span>
+                <h3>T-shirt collector</h3>
+                <p>Design exclusif daté chaque mois.</p>
+            </div>
+        </div>
+
+        <!-- Petite card 3 - Buffet -->
+        <div class="bento-card small card-3">
+            <div class="card-content">
+                <span class="card-icon"></span>
+                <h3>Buffet healthy</h3>
+                <p>Nutrition sportive après chaque session.</p>
+            </div>
+        </div>
+
+        <!-- Grande card 4 - Avant-premières -->
+        <div class="bento-card large card-4">
+            <div class="card-content">
+                <span class="card-icon"></span>
+                <h3>Avant-premières PerfTechX</h3>
+                <p>Accès prioritaire aux nouvelles collections. Découvre les sorties avant tout le monde.</p>
+            </div>
+        </div>
+
+        <!-- Moyenne card 5 - Communauté -->
+        <div class="bento-card medium card-5">
+            <div class="card-content">
+                <span class="card-icon"></span>
+                <h3>Communauté d'élite</h3>
+                <p>Réseau d'athlètes motivés. Groupe WhatsApp privé.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="event-section">
+        <div class="section-header">
+            <div class="section-label">Premier événement</div>
+            <h2 class="section-title">Le coup d'envoi</h2>
+        </div>
+        <div class="event-card">
+            <div class="event-date">26 AVRIL 2026</div>
+            <p class="event-description">
+                Le lancement officiel du PERF CLUB. Une session qui donnera le ton pour toute l'année.
+            </p>
+            <div class="event-info-grid">
+                <div class="event-info-item">
+                    <div class="event-info-label">Lieu</div>
+                    <div class="event-info-value">Montreuil</div>
+                </div>
+                <div class="event-info-item">
+                    <div class="event-info-label">Heure</div>
+                    <div class="event-info-value">9h45</div>
+                </div>
+             
+                <div class="event-info-item">
+                    <div class="event-info-label">Niveau</div>
+                    <div class="event-info-value">Confirmés</div>
+                </div>
+            </div>
+            <div class="event-program">
+                <strong>AU PROGRAMME :</strong>
+                <p>Session de performance intensive • Remise de ton t-shirt membre AVRIL 2026 • Buffet healthy post-entraînement • Networking avec les autres membres</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- Section Avantages - VERSION COMPACTE -->
+<section class="advantages-section" id="avantages">
+    <div class="section-header">
+        <div class="section-label">Ce qui t'attend</div>
+        <h2 class="section-title">Une communauté d'élite<br>pour athlètes exigeants</h2>
+    </div>
+
+    <div class="advantages-grid">
+        <!-- Grande card à gauche - VERSION COMPACTE -->
+        <div class="advantage-card large-card">
+            <div class="card-overlay">
+                <div class="card-top">
+                    <div class="price-big">15€</div>
+                    <div class="adhesion-label">/ ADHÉSION ANNUELLE</div>
+                </div>
+                <div class="cta-wrapper">
+                    <a href="#inscription" class="btn-cta">DEVENIR MEMBRE →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Petites cards à droite -->
+        <div class="small-cards">
+            <!-- Card 1 -->
+            <div class="advantage-card small-card">
+                <div class="card-icon-wrapper">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                              fill="#FF4500"/>
+                    </svg>
+                </div>
+                <h3>Événements exclusifs</h3>
+                <p>Sessions mensuelles réservées. Intensité maximale, progression garantie.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="advantage-card small-card">
+                <div class="card-icon-wrapper">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                        <path d="M16 11C17.66 11 18.99 9.66 18.99 8C18.99 6.34 17.66 5 16 5C14.34 5 13 6.34 13 8C13 9.66 14.34 11 16 11ZM8 11C9.66 11 10.99 9.66 10.99 8C10.99 6.34 9.66 5 8 5C6.34 5 5 6.34 5 8C5 9.66 6.34 11 8 11ZM8 13C5.67 13 1 14.17 1 16.5V19H15V16.5C15 14.17 10.33 13 8 13ZM16 13C15.71 13 15.38 13.02 15.03 13.05C16.19 13.89 17 15.02 17 16.5V19H23V16.5C23 14.17 18.33 13 16 13Z"
+                              fill="#FF4500"/>
+                    </svg>
+                </div>
+                <h3>Accès complet membre</h3>
+                <p>T-shirt édition limitée, buffet healthy, avant-premières PerfTechX, communauté WhatsApp privé.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="cta-section">
+        <h2 class="cta-title">
+            Prêt à rejoindre<br>
+            <span class="highlight">l'élite</span> ?
+        </h2>
+        <p class="cta-description">
+            Le PERF CLUB rassemble les athlètes les plus déterminés de Paris. Une communauté, une mentalité, une marque. Accède aux avant-premières, collectionne les t-shirts exclusifs, repousse tes limites.
+        </p>
+        <a href="#inscription" class="btn-primary" style="font-size: 1.1rem; padding: 1.5rem 4rem;">Devenir membre - 15€</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">PERFTECHX</div>
+                <p class="footer-tagline">
+                    Performance • Discipline • Mentalité d'athlète
+                </p>
+                <p class="footer-tagline">
+                    Le PERF CLUB est une initiative PerfTechX pour rassembler les athlètes les plus déterminés de Paris.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens</h4>
+                <a href="#benefices">Bénéfices</a>
+                <a href="#tshirt">T-shirt</a>
+                <a href="#inscription">Inscription</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <a href="https://perftechx.com">perftechx.com</a>
+                <a href="https://www.instagram.com/perftechx">Instagram</a>
+                <a href="mailto:contact@perftechx.com">Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 PerfTechX • PERF CLUB • Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.benefit-card, .problem-card, .criteria-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+        function toggleMenu() {
+            const burger = document.querySelector('.burger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            burger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        }
+    </script>
+    
+</body>
+</html>
